@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Fitness Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Your Fitness Company</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#food">Food Selector</a></li>
+                <li><a href="#exercise">Exercise Tracker</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <h2>Stay Fit, Eat Right!</h2>
+            <p>Your journey to a healthier lifestyle starts here.</p>
+        </section>
+
+        <section id="about" class="card">
+            <h2>About Us</h2>
+            <p>At Your Fitness Company, we believe in promoting a healthy lifestyle through balanced nutrition and exercise.</p>
+            <p>Our mission is to empower individuals to achieve their fitness goals with personalized plans and community support.</p>
+        </section>
+
+        <section id="food" class="card">
+            <h2>Food Selector</h2>
+            <img src="https://cdn.pixabay.com/photo/2020/08/21/18/53/healthy-5506822_640.jpg" alt="Healthy Food" class="food-image">
+            <select id="foodSelector">
+                <option value="">Select Food</option>
+                <option value="apple">🍏 Apple</option>
+                <option value="banana">🍌 Banana</option>
+                <option value="chicken">🍗 Chicken Breast</option>
+            </select>
+            <div id="calorieInfo"></div>
+        </section>
+
+        <section id="exercise" class="card">
+            <h2>Exercise Tracker</h2>
+            <img src="https://plus.unsplash.com/premium_photo-1669021454412-f561606cd6cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZXhlcmNpc2V8ZW58MHx8MHx8fDA%3D" alt="Exercise" class="exercise-image">
+            <select id="exerciseSelector">
+                <option value="">Select Exercise</option>
+                <option value="running">🏃 Running (300 calories/hour)</option>
+                <option value="cycling">🚴 Cycling (250 calories/hour)</option>
+                <option value="swimming">🏊 Swimming (400 calories/hour)</option>
+            </select>
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" placeholder="Enter duration">
+            <button id="calculateCalories">Calculate Calories Burned</button>
+            <div id="exerciseCalorieInfo"></div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Contact us at info@yourfitnesscompany.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
